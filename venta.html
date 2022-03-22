@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venta</title>
+</head>
+
+<body>
+    <div class="text-primary bg-dark">
+        <div class="container text-center">
+            <h1>Compra tu plan</h1>
+            <div>
+                <p class="lead text-light">Adquiere el plan que mas te guste. <br> Segun los canales de que quieras. <br> Y si los quieres en HD.</p>
+            </div>
+            <div>
+                <h2>Escoge tu plan y la cantidad de televisores que deseas</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/logoDT.jpg" class="card-img-top" alt="sin imagen">
+                        <div class="card-body text-dark bg-primary">
+                            <h3 class="card-title">$45.000 Mensuales</h3>
+                            <h5 class="card-title">45 Canales</h5>
+                            <h6 class="card-title">Sin HD</h6>
+                            <p class="card-text lead">Adquiere tu plan Basico con 45 canales.</p>
+                            <button type="button" class="btn btn-dark text-primary" data-bs-toggle="modal" data-bs-target="#plan1">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/logoDT.jpg" class="card-img-top" alt="sin imagen">
+                        <div class="card-body text-dark bg-primary">
+                            <h3 class="card-title">$60.000 Mensuales</h3>
+                            <h5 class="card-title">45 Canales</h5>
+                            <h6 class="card-title">15 HD</h6>
+                            <p class="card-text lead">Adquiere tu plan Basico con 45 canales y 15 canales en HD.</p>
+                            <button type="button" class="btn btn-dark text-primary" data-bs-toggle="modal" data-bs-target="#plan2">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/logoDT.jpg" class="card-img-top" alt="sin imagen">
+                        <div class="card-body text-black bg-primary">
+                            <h3 class="card-title">$75.000 Mensuales</h3>
+                            <h5 class="card-title">75 Canales</h5>
+                            <h6 class="card-title">Sin HD</h6>
+                            <p class="card-text lead">Adquiere tu plan plus con 75 canales.</p>
+                            <button type="button" class="btn btn-dark text-primary" data-bs-toggle="modal" data-bs-target="#plan3">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 m-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/logoDT.jpg" class="card-img-top" alt="sin imagen">
+                        <div class="card-body text-black bg-primary">
+                            <h3 class="card-title">$90.000 Mensuales</h3>
+                            <h5 class="card-title">75 Canales</h5>
+                            <h6 class="card-title">20 HD</h6>
+                            <p class="card-text lead">Adquiere tu plan plus con 75 canales y 20 canales en HD.</p>
+                            <button type="button" class="btn btn-dark text-primary" data-bs-toggle="modal" data-bs-target="#plan4">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <a href="index.html" type="button" class="btn btn-primary text-dark">Regresar</a>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-light py-4 text-center text-dark">
+        <p>Copyright 2022 por Oscar Andres Vasque Leon</p>
+    </footer>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="plan1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content  text-primary bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cuantos TV Necesitas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="">Cantidad</label>
+                        <input id="tv1" type="number">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button onclick="basicosinhd()" type="button" class="btn btn-primary">Precio Total</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="plan2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content  text-primary bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cuantos TV Necesitas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="">Cantidad</label>
+                        <input id="tv2" type="number">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button onclick="basicoconhd()" type="button" class="btn btn-primary">Precio Total</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="plan3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content  text-primary bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cuantos TV Necesitas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="">Cantidad</label>
+                        <input id="tv3" type="number">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button onclick="plussinhd()" type="button" class="btn btn-primary">Precio Total</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="plan4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content  text-primary bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cuantos TV Necesitas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="">Cantidad</label>
+                        <input id="tv4" type="number">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button onclick="plusconhd()" type="button" class="btn btn-primary">Precio Total</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

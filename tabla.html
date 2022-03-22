@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tabla de datos</title>
+</head>
+
+<body>
+    <div class="titulo-tabla">
+        <h1>Tabla de Vacunacion</h1>
+    </div>
+    <div class="container col-8 recepcion-datos py-4">
+        <div class="fore-group">
+            <input class="fore-control mb-2" id="nombre" type="text" placeholder="Nombre">
+            <input class="fore-control mb-2" id="apellido" type="text" placeholder="Apellido">
+            <input class="fore-control mb-2" id="edad" type="number" placeholder="Edad">
+            <input class="fore-control mb-2" id="dosis" type="number" placeholder="# Dosis">
+        </div>
+        <table class="table-info">
+            <thead>
+                <tr class="table-danger">
+                    <th class="col-3" scope="col">Nombre</th>
+                    <th class="col-4" scope="col">Apellido</th>
+                    <th class="col-4" scope="col">Edad</th>
+                    <th class="col-4" scope="col"># Dosis</th>
+                </tr>
+                <hr>
+            </thead>
+            <tbody id="tabla">
+
+            </tbody>
+        </table>
+        <hr>
+
+    </div>
+
+    <div class="container col-8 py-2">
+        <button onclick="tabla()" type="button" class="btn btn-success">Agregar</button>
+    </div>
+
+    <div class="container py-5">
+        <a href="index.html" type="button" class="btn btn-danger">Regresar</a>
+    </div>
+
+    <footer class="container-fluid bg-dark py-4 text-center text-light footer">
+        <p>Copyright 2022 por Oscar Andres Vasque Leon</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

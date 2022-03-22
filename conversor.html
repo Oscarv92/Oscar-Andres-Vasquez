@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>conversor</title>
+</head>
+
+<body class="body-conversor">
+    <div class="titulo-conversor">
+        <h1>Calcula tu valor en YENES</h1>
+    </div>
+
+    <div class="container conversor">
+        <div class="row py-4">
+            <div class="col-12 col-md-2">
+                <div class="fore-group">
+                    <label for="peso">Peso Colombiano</label>
+                    <input id="peso" class="fore-control" name="peso" type="number">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="py-2 convertir">
+                <button onclick="convertir()" type="button" class="btn btn-danger btn-sm">Convertir</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cantidad">
+        <div class="row py-4">
+            <div class="col-12 col-md-2">
+                <label for="cantidad">Total de Yen:</label>
+                <input id="cantidad" class="fore-control" name="cantidad" type="number" disabled>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-4">
+                <a class="btn btn-primary" href="index.html" class="btn btn-primary" type="button">Ver Perfil</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark py-4 text-center text-light footer">
+        <p>Copyright 2022 por Oscar Andres Vasque Leon</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

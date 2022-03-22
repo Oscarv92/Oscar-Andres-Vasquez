@@ -1,0 +1,80 @@
+.body-derechos {
+    background-color: #EFFFFD;
+}
+
+.perfil {
+    background-color: #EFFFFD;
+    color: #21325E;
+}
+
+.carta {
+    background-color: #EFFFFD;
+    text-align: justify;
+}
+
+.texto-perfil {
+    margin: 50px auto;
+    background-color: #3E497A;
+    text-align: justify;
+    color: #FFBC80;
+}
+
+.body-imc {
+    font-size: x-large;
+}
+
+.titulo-calcualadora {
+    background-color: #FC4F4F;
+    text-align: center;
+}
+
+.calculadora {
+    text-align: center;
+    background-color: #6795a1;
+}
+
+.resultado {
+    text-align: center;
+    background-color: #9AD0EC;
+}
+
+.body-conversor {
+    font-size: x-large;
+}
+
+.titulo-conversor {
+    background-color: #9AD0EC;
+    text-align: center;
+    color: #05595B;
+}
+
+.conversor {
+    background-color: #469ea0;
+}
+
+.convertir {
+    background-color: #EFFFFD;
+}
+
+.cantidad {
+    background-color: #7a5cb3;
+}
+
+.titulo-tabla {
+    background-color: #0E185F;
+    text-align: center;
+    color: #E8FFC2;
+}
+
+.recepcion-datos {
+    background-color: #FFDDEE;
+}
+
+.card-text {
+    color: #000000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}

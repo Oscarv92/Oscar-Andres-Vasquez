@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IMC</title>
+</head>
+
+<body class="body-imc">
+    <div class="titulo-calcualadora">
+        <h1>Calcula tu IMC</h1>
+    </div>
+    <div class="calculadora">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-12 col-md-6">
+                    <div class="fore-group">
+                        <label for="num1">Peso en kg</label>
+                        <input id="num1" class="fore-control" name="num1" type="number">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-12 col-md-6">
+                    <div class="fore-group">
+                        <label for="num2">Estatura en cm</label>
+                        <input id="num2" class="fore-control" name="num2" type="number">
+                        <br>
+                        <div class="py-4">
+                            <button onclick="calculo()" type="button" class="btn btn-outline-primary">Calculo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <div class="row py-4">
+            <div class="col-12 col-md-7">
+                <label for="resultado">Su IMC es de:</label>
+                <input id="resultado" class="fore-control" name="resultado" type="number" disabled>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-12 col-md-4">
+                <a class="btn btn-primary" href="index.html" class="btn btn-primary" type="button">Ver Perfil</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark py-4 text-center text-light footer">
+        <p>Copyright 2022 por Oscar Andres Vasque Leon</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
