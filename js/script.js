@@ -33,17 +33,44 @@ function tabla() {
     let edad = document.getElementById('edad').value;
     let dosis = document.getElementById('dosis').value;
 
-    tabla.innerHTML += `<tr>
-    <td>${nombre}</td>
-    <td>${apellido}</td>
-    <td>${edad}</td>
-    <td>${dosis}</td>
-    </tr>`
+    if (nombre == "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'no pusiste el nombre!',
+        })
+    } else if (apellido == "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'no pusiste el apellido!',
+        })
+    } else if (edad == "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'no pusiste tu edad!',
+        })
+    } else if (dosis == "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'no pusiste que dosis tienes!',
+        })
+    } else {
+        tabla.innerHTML += `<tr>
+        <td>${nombre}</td>
+        <td>${apellido}</td>
+        <td>${edad}</td>
+        <td>${dosis}</td>
+        </tr>`
 
-    document.getElementById('nombre').value = "";
-    document.getElementById('apellido').value = "";
-    document.getElementById('edad').value = "";
-    document.getElementById('dosis').value = "";
+        document.getElementById('nombre').value = "";
+        document.getElementById('apellido').value = "";
+        document.getElementById('edad').value = "";
+        document.getElementById('dosis').value = "";
+    }
+
 }
 
 function basicosinhd() {
